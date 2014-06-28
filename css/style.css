@@ -27,6 +27,9 @@ h2 {
 	font-weight: normal;
 	font-style: italic;
 }
+h3 {
+	color: #1589FF;
+}
 a {
 	color: #CCCCCC;
 }
@@ -43,7 +46,7 @@ address {
 	left: 0;
 	right: 75%;
 	height: 100%; 
-	background-color: black;
+	background-color: white;
 }
 #left_panel img {
 	position: relative;
@@ -112,8 +115,13 @@ main {
 	text-align: justify;
 }
 main h2 {
-	padding-top: 1em;
+	padding-top: 2em;
+	color: #1589FF;
 }
+main h3 {
+	padding-top:1em;
+}
+
 footer {
 	font-size: 75%;
 	margin-top: 4em;

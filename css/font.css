@@ -27,8 +27,7 @@
   src:
     url('fonts/LinBiolinum_RBah.ttf') format('truetype'),
     url('fonts/LinBiolinum_RB.woff') format('woff'),
-    url('fonts/LinBiolinum_RB.svg#LinBiolinumOR') format('svg');
-  font-style: normal;
+    url('fonts/LinBiolinum_RB.svg#LinBiolinumOR') format('svg'); font-style: normal;
   font-weight: bold;
 }
 
@@ -93,83 +92,4 @@
 	font-weight: bold;
 }
 
-/* Hack to fix Chrome font rendering */
-@media screen and (-webkit-min-device-pixel-ratio:0) {
-  
-  /* LINUX BIOLINUM */
 
-@font-face {
-  font-family: MyBiolinum;
-  src:
-       url('fonts/LinBiolinum_R.svg#LinBiolinumO') format('svg');
-  font-style: normal;
-  font-weight: normal;
-}
-
-@font-face {
-  font-family: MyBiolinum;
-  src:
-      url('fonts/LinBiolinum_RI.svg#LinBiolinumOI') format('svg');
-  font-style: italic;
-  font-weight: normal;
-}
-
-@font-face {
-  font-family: MyBiolinum;
-  src:
-       url('fonts/LinBiolinum_RB.svg#LinBiolinumOR') format('svg');
-  font-style: normal;
-  font-weight: bold;
-}
-
-@font-face {
-  font-family: MyBiolinum;
-  src:
-  	    url('fonts/LinBiolinum_RBI.svg#LinBiolinumORI') format('svg');
-  font-style: italic;
-  font-weight: bold;
-}
-
-/* LINUX LIBERTINE DISPLAY */
-
-@font-face {
-	font-family: MyLibertineDisplay;
-	src:
-		url('fonts/LinLibertine_DR.svg#LinLibertineDisplayO') format('svg');
-	font-style: normal;
-	font-weight: normal;
-}
-
-/* LINUX LIBERTINE */
-
-@font-face {
-	font-family: MyLibertine;
-	src:
-		url('fonts/LinLibertine_R.svg#LinLibertineO') format('svg');
-	font-style: normal;
-	font-weight: normal;
-}
-@font-face {
-	font-family: MyLibertine;
-	src:
-		url('fonts/LinLibertine_RI.svg#LinLibertineOI') format('svg');
-	font-style: italic;
-	font-weight: normal;
-}
-@font-face {
-	font-family: MyLibertine;
-	src:
-
-		url('fonts/LinLibertine_RB.svg#LinLibertineOB') format('svg');
-	font-style: normal;
-	font-weight: bold;
-}
-@font-face {
-	font-family: MyLibertine;
-	src:
-		
-		url('fonts/LinLibertine_RBI.svg#LinLibertineOBI') format('svg');
-	font-style: italic;
-	font-weight: bold;
-}
-}

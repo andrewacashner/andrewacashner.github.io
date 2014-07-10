@@ -61,6 +61,7 @@ header h2 {
 header nav {
 	clear: left;
 	display: table;
+	padding-bottom: 0.25em;
 }
 header nav ul {
 	display: table-row;

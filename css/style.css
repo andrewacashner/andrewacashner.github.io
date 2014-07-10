@@ -38,11 +38,11 @@ body {
 	min-width: 750px;   
 	margin-left: 15%;
 	margin-right: 15%;
-	padding: 1em;
 	overflow: auto;
 	background-color: #333333;
 }
 header {
+	display: block;
 	position: relative;
 	height: 150px;
 	padding-left: 2em;

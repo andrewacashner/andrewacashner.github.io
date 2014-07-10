@@ -45,7 +45,7 @@ body {
 	height: 150px;
 	padding-left: 3em;
 	padding-right: 3em;
-	padding-bottom: 0.25em;
+	margin-bottom: 0.5em;
 	overflow: hidden;
 	background-color: black; 
 }
@@ -68,7 +68,6 @@ header nav ul {
 header nav li {
 	display: table-cell;
 	padding-right: 1em;
-	padding-bottom: 0.25em;
 }
 #main {
 	display: block;

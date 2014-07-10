@@ -39,13 +39,12 @@ body {
 	overflow: auto;
 	background-color: #333333;
 }
-#header {
+header {
 	display: block;
 	position: relative;
-	height: 150px;
+	height: 160px;
 	padding-left: 3em;
 	padding-right: 3em;
-	margin-bottom: 0.5em;
 	overflow: hidden;
 	background-color: black; 
 }

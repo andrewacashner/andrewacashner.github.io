@@ -68,6 +68,7 @@ header nav li {
 	padding-right: 1em;
 }
 main {
+	display: block;
 	position: relative;
 /*	margin-top: 3em;
 	margin-left: 15%;

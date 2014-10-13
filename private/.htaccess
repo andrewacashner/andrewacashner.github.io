@@ -1,4 +1,0 @@
-AuthType Basic
-AuthName "Credentials required to view private pages"
-AuthUserFile .htpasswd
-Require valid-user

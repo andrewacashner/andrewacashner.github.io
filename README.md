@@ -1,3 +1,3 @@
 This is the personal website of Andrew A. Cashner.
 
-Contact: andrew at andrewcashner dot com
+Contact: andrewacashner at gmail dot com

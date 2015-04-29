@@ -20,7 +20,7 @@ li {
 	margin-top: 0.25em;
 }
 q {
-	quotes: &ldquo; &rdquo; &lsquo; &rsquo; ;
+	quotes: "\201C" "\201D" "\2018" "\2019";
 }
 code {
 	font-family: monospace;

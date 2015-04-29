@@ -19,9 +19,6 @@ main {
 li {
 	margin-top: 0.25em;
 }
-code {
-	font-family: monospace;
-}
 q:before {
 	content: open-quote;
 }
@@ -42,8 +39,9 @@ header h1 {
 	color: #dc322f
 }
 header h2 {
-	font-size: 1.75em;
+	font-size: 2em;
 	font-style: italic;
+	font-weight: normal;
   color: #cb4b16; 
 }
 header a {

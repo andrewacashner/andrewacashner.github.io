@@ -19,12 +19,6 @@ main {
 li {
 	margin-top: 0.25em;
 }
-q:before {
-	content: open-quote;
-}
-q:after {
-	content: close-quote;
-}
 /* Header with site title, page title, and nav menu */
 header {
 	background-color: #002b36; 

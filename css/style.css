@@ -22,8 +22,11 @@ li {
 code {
 	font-family: monospace;
 }
-q:before, q:after{
-	content:&lsquo;&rdquo;;
+q:before {
+	content: open-quote;
+}
+q:after {
+	content: close-quote;
 }
 /* Header with site title, page title, and nav menu */
 header {

@@ -57,7 +57,9 @@ header a {
     text-decoration: none;
 }
 header nav {
+    width: 100%;
     display: table;
+
 }
 header nav ul {
     display: table-row;
@@ -65,4 +67,11 @@ header nav ul {
 header nav li {
     display: table-cell;
     padding-right: 1em;
+}
+
+/* Display nav menu as vertical stack on small screens */
+@media only screen and (max-width: 420px) {
+    header nav li {
+        display: block;
+    }
 }

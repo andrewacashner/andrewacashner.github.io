@@ -20,15 +20,6 @@ html {
   margin: 2em;
 }
 
-/* INLINE STYLES */
-q {
-  /* Typographical quotation marks */
-  quotes: "\201C" "\201D" "\2018" "\2019";
-}
-cite {
-  font-style: italic;
-}
-
 /* PERIODS: WEEKS, BREAKS */
 body { 
   counter-reset: h3;
@@ -117,5 +108,17 @@ p.listlabel {
   /* Align with left edge of list item labels */
   margin-left: 3em;
   font-style: italic;
+}
+
+/* INLINE STYLES */
+q {
+  /* Typographical quotation marks */
+  quotes: "\201C" "\201D" "\2018" "\2019";
+}
+cite {
+  font-style: italic;
+}
+strong.alert {
+  color: red;
 }
 

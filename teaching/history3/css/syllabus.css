@@ -23,7 +23,6 @@ html {
 /* PERIODS: WEEKS, BREAKS */
 body { 
   counter-reset: h3;
-  counter-reset: h4;
 }
 
 /* AUTOMATIC LABEL WITH NUMBER FOR UNITS */
@@ -47,10 +46,9 @@ h3.unit:before {
 }
 
 /* AUTOMATIC LABEL WITH NUMBER FOR WEEKS */
-section.week:before {
-  counter-increment: h4;
-  content: "Week " counter(h4);
+section.week h1 {
   font-style: italic;
+  font-weight: normal;
 }
 
 /* CLASS TITLES */
@@ -100,7 +98,7 @@ ol, ul {
   /* Space for list item labels */
   padding-left: 2em;
 }
-ol.reading, ol.music {
+ol.reading, ol.music, ol.writing {
   /* Space from left margin to start of list item labels */
   margin-left: 3em;
 }
@@ -121,4 +119,6 @@ cite {
 strong.alert {
   color: red;
 }
-
+abbr {
+  font-weight: bold;
+}

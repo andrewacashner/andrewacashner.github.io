@@ -20,14 +20,8 @@ html {
   margin: 2em;
 }
 
-/* PERIODS: WEEKS, BREAKS */
-body { 
-  counter-reset: h3;
-}
-
 /* AUTOMATIC LABEL WITH NUMBER FOR UNITS */
 hr.unit {
-  counter-increment: h3;
   border: none;
   border-top: 3px double;
   overflow: visible;
@@ -40,9 +34,6 @@ hr.unit:after {
   position: relative;
   top: -0.6em;
   padding: 0 6px;
-}
-h3.unit:before {
-  content: "Unit " counter(h3, upper-roman) ": ";
 }
 
 /* AUTOMATIC LABEL WITH NUMBER FOR WEEKS */

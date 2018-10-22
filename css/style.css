@@ -31,6 +31,12 @@ code {
 cite {
     font-style: italic;
 }
+p.abstract {
+  font-style: italic;
+  font-size: 80%;
+  margin-left: 3em;
+  margin-right: 3em;
+}
 
 /* Header with site title, page title, and nav menu */
 header {

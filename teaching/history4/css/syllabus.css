@@ -37,6 +37,7 @@ hr.unit {
   text-align: center;
   height: 10px;
 }
+/*
 hr.unit:after {
   background: white;
   content: "♮ ♯ ♭";
@@ -44,6 +45,7 @@ hr.unit:after {
   top: -0.6em;
   padding: 0 6px;
 }
+*/
 
 section h1 {
   color: #BD0032;

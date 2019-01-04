@@ -11,10 +11,11 @@
  * Let me know if you find something useful or see something that could be
  * improved, see contact info at http://www.andrewcashner.com/.
  */
-@import url('https://fonts.googleapis.com/css?family=Merriweather+Sans');
+@import
+url('https://fonts.googleapis.com/css?family=Merriweather|Merriweather+Sans');
 
 html {
-  font-family: 'Merriweather Sans', sans-serif;
+  font-family: 'Merriweather', serif;
   font-size: 100%;
   max-width: 45em;
   margin: 0.5em;
@@ -47,7 +48,11 @@ hr.unit:after {
 }
 */
 
-section h1 {
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Merriweather Sans', sans-serif;
+}
+
+section h1, h2 {
   color: #BD0032;
 }
 
@@ -55,17 +60,21 @@ section section h1{
   color: black;
 }
 
-/* AUTOMATIC LABEL WITH NUMBER FOR WEEKS */
-section.week h1 {
-  font-style: italic;
+h3.unit {
+  font-size: 175%;
   font-weight: normal;
+  font-style: italic;
+}
+
+section.week h1 {
+  font-weight: normal;
+  font-size: 125%;
 }
 
 /* CLASS TITLES */
 h5 {
   /* Used for titles of class sessions */
   font-size: 100%;
-  font-family: sans-serif;
 }
 h5.event {
   font-style: italic;

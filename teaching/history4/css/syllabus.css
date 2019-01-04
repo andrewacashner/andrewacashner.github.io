@@ -114,16 +114,13 @@ table.inner {
 
 /* LISTS OF ASSIGNMENTS */
 ol, ul {
-  /* Space for list item labels */
-  padding-left: 1.25em;
-}
-ol.reading, ol.music, ol.writing {
   /* Space from left margin to start of list item labels */
-  margin-left: 3em;
+  padding-left: 1em;
+}
+li {
+  margin-left: 0.5em;
 }
 p.listlabel {
-  /* Align with left edge of list item labels */
-  margin-left: 3em;
   font-style: italic;
 }
 

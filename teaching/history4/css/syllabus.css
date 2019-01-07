@@ -12,23 +12,25 @@
  * improved, see contact info at http://www.andrewcashner.com/.
  */
 @import
-url('https://fonts.googleapis.com/css?family=Merriweather|Merriweather+Sans');
+url('https://fonts.googleapis.com/css?family=Sanchez:400,400i|Open+Sans:400,400i,700,700i');
 
 html {
-  font-family: 'Merriweather', serif;
+  font-family: 'Open Sans', sans-serif;
   font-size: 100%;
   max-width: 45em;
   margin: 0.5em;
-  background: #C6D3D7;
+  background: LightGray;
 }
 
 a {
-  color: #004BD6;
+  color: DarkBlue;
 }
 
+/*
 a:visited {
-  color: #5071AF; /* #0F93FF;*/
+  color: DarkSlateBlue;
 }
+*/
 
 /* AUTOMATIC LABEL WITH NUMBER FOR UNITS */
 hr.unit {
@@ -38,55 +40,80 @@ hr.unit {
   text-align: center;
   height: 10px;
 }
-/*
+
 hr.unit:after {
-  background: white;
+  background: LightGray;
   content: "♮ ♯ ♭";
   position: relative;
-  top: -0.6em;
+  top: -1em;
   padding: 0 6px;
 }
-*/
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'Merriweather Sans', sans-serif;
-}
-
-section h1, h2 {
-  color: #BD0032;
-}
-
-section section h1{
+h1, h2 {
+  font-family: 'Sanchez', serif;
+  font-weight: normal;
   color: black;
 }
 
-h3.unit {
-  font-size: 175%;
-  font-weight: normal;
+section.main h1 {
+  font-size: 200%;
+}
+
+h2.unit {
+  font-size: 180%;
   font-style: italic;
+}
+
+section h1, section.week>h1, section.week>h2 {
+  color: FireBrick;
+  font-size: 180%;
+}
+section section h1 {
+  font-size: 160%;
+  color: black;
+}
+section section section h1 {
+  font-size: 140%;
+}
+section section section section h1 {
+  font-size: 120%;
 }
 
 section.week h1 {
-  font-weight: normal;
-  font-size: 125%;
+  font-size: 160%;
 }
 
-/* CLASS TITLES */
-h5 {
-  /* Used for titles of class sessions */
-  font-size: 100%;
+section.day h1 {
+  font-size: 130%;
 }
-h5.event {
+
+section.day h1.noclass {
   font-style: italic;
   color: gray;
 }
-h5.duedate>table {
+
+section.work section h1 {
+  font-family: 'Open Sans', sans-serif;
+  font-style: bold;
+}
+
+section.day h1.duedate>table {
   border-style: solid;
   border-color: #BD0032;
 }
+section.day {
+  padding-bottom: 2em;
+}
+section.todo h1 {
+  margin-bottom: 0pt;
+}
+
 table {
   border-collapse: collapse;
   margin-left: 1em;
+}
+table.week-head {
+  margin-left: 0em;
 }
 td {
   vertical-align: top;
@@ -100,7 +127,10 @@ td.text,th.text {
 }
 td.date,th.date {
   font-weight: normal;
-  width: 6em;
+  width: 8em;
+}
+td.subtitle {
+  font-style: italic;
 }
 tfoot.total {
   border-top: 1px solid;
@@ -119,9 +149,6 @@ ol, ul {
 }
 li {
   margin-left: 0.5em;
-}
-p.listlabel {
-  font-style: italic;
 }
 
 /* EMBEDDED VIDEOS */

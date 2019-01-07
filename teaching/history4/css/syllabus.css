@@ -101,7 +101,7 @@ section.day h1.duedate>table {
   border-style: solid;
   border-color: #BD0032;
 }
-section.day {
+section.work {
   padding-bottom: 2em;
 }
 section.todo h1 {
@@ -127,7 +127,7 @@ td.text,th.text {
 }
 td.date,th.date {
   font-weight: normal;
-  width: 8em;
+  width: 8.5em;
 }
 td.subtitle {
   font-style: italic;

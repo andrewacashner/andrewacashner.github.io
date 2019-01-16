@@ -147,8 +147,21 @@ ol, ul {
   /* Space from left margin to start of list item labels */
   padding-left: 1em;
 }
+li > p {
+  margin: 0.25em;
+}
+ol:last-child, ul:last-child {
+  margin-bottom: 0.5em;
+}
 li {
   margin-left: 0.5em;
+}
+ol ol {
+  list-style-type: lower-alpha;
+}
+
+ol ol ol {
+  list-style-type: lower-roman;
 }
 
 /* EMBEDDED VIDEOS */

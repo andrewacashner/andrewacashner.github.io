@@ -1,0 +1,68 @@
+/* reformation.css
+ * Stylesheet for course, Christian Worship in the Reformation
+ * Spring 2019
+ *
+ * Andrew A. Cashner
+ * College Music Department,  University of Rochester
+ *
+ * 2019/01/17
+ *
+ * This stylesheet is in the public domain.
+ * Let me know if you find something useful or see something that could be
+ * improved, see contact info at http://www.andrewcashner.com/.
+ */
+
+@import url('syllabus.css');
+@import
+url('https://fonts.googleapis.com/css?family=Cormorant+Garamond:500,500i,700,700i');
+
+html {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 125%;
+  background: Ivory;
+}
+
+a {
+  color: Indigo;
+}
+
+/* AUTOMATIC LABEL WITH NUMBER FOR UNITS */
+hr.unit {
+  border: none;
+  border-top: 3px double;
+  overflow: visible;
+  text-align: center;
+  height: 10px;
+}
+
+hr.unit:after {
+  background: Ivory;
+  content: "♮ ♯ ♭";
+  position: relative;
+  top: -1em;
+  padding: 0 6px;
+}
+
+h1, h2 {
+  font-weight: bold;
+  color: black;
+}
+
+h2.unit {
+  font-style: italic;
+}
+
+section h1, section.week>h1, section.week>h2 {
+  color: DarkRed;
+}
+section section h1 {
+  color: black;
+}
+section.work section h1 {
+  font-family: 'Open Sans', sans-serif;
+  font-style: bold;
+}
+
+td.subtitle {
+  font-style: italic;
+}

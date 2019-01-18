@@ -42,6 +42,11 @@ h2.unit {
   font-size: 180%;
 }
 
+section.toc > h1{
+  font-size : 140%;
+  color : black;
+  font-style : italic;
+}
 section h1, section.week>h1, section.week>h2 {
   font-size: 180%;
 }

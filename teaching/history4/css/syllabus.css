@@ -88,13 +88,38 @@ section.todo h1 {
   margin-bottom: 0pt;
 }
 
+}
+section.week>h1,section.day>h1 { 
+  display: table;
+  width: 100%;
+}
+section.week>h1>ul.week-head,section.day>h1>ul.day-head {
+  display: table-row;
+}
+ul.week-head>li.week-label,ul.day-head>li.date {
+  display: table-cell;
+}
+ul.week-head>li.week-label {
+  width: 5em;
+}
+ul.day-head>li.date {
+  width: 8em;
+}
+ul.week-head>li.week-title,ul.day-head>li.title {
+  display: table-cell;
+}
+ul.week-head>li.week-subtitle,ul.day-head>li.subtitle {
+  display: table-cell;
+  font-style: italic;
+}
+@media only screen and (max-width: 600px) {
+  section.week>h1>ul.week-head>li,section.day>h1>ul.day-head>li {
+    display: block;
+}
+
 table {
   border-collapse: collapse;
   margin-left: 1em;
-}
-table.week-head {
-  margin-left: 0em;
-}
 td {
   vertical-align: top;
   padding-right: 1em;
@@ -163,7 +188,7 @@ div.aside {
   margin-right: 0;
   margin-top: 0.5em;
   margin-bottom: 0.5em;
-  max-width: 15em;
+  max-width: 20em;
   text-align: right;
   font-size: 75%;
 }

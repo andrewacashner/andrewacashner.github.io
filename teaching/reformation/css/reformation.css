@@ -19,11 +19,11 @@ url('https://fonts.googleapis.com/css?family=Cormorant+Garamond:500,500i,700,700
 html {
   font-family: 'Cormorant Garamond', serif;
   font-size: 125%;
-  background: Ivory;
+  background: AntiqueWhite;
 }
 
 a {
-  color: Indigo;
+  color: DarkBlue;
 }
 
 /* AUTOMATIC LABEL WITH NUMBER FOR UNITS */
@@ -59,7 +59,6 @@ section section h1 {
   color: black;
 }
 section.work section h1 {
-  font-family: 'Open Sans', sans-serif;
   font-style: bold;
 }
 

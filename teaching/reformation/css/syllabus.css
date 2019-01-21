@@ -93,27 +93,23 @@ section.week>h1,section.day>h1,section.toc>h1 {
   display: table;
   width: 100%;
 }
-h1 ul{ 
+h1>ul { 
   display: table-row;
 }
-h1 ul li {
+h1>ul>li {
   display: table-cell;
 }
-h1 ul li {
-  display: table-cell;
-}
-ul li.week-label {
+ul>li.week-label {
   width: 5em;
 }
-ul li.date {
+ul>li.date {
   width: 8em;
 }
-ul li.week-subtitle,li.subtitle {
-  display: table-cell;
+ul>li.week-subtitle, ul>li.subtitle {
   font-style: italic;
 }
 @media only screen and (max-width: 600px) {
-  h1 ul li {
+  h1>ul>li {
     display: block;
 }
 

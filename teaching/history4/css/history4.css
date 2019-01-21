@@ -68,6 +68,9 @@ section.work section h1 {
   font-style: bold;
 }
 
-td.subtitle {
-  font-style: italic;
+li.week-subtitle::before,li.subtitle::before {
+  content: "{";
+}
+li.week-subtitle::after,li.subtitle::after {
+  content: "}";
 }

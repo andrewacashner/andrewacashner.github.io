@@ -34,7 +34,7 @@ hr.unit:after {
   padding: 0 6px;
 }
 
-section.main h1 {
+section.main>h1 {
   font-size: 200%;
 }
 
@@ -42,49 +42,49 @@ h2.unit {
   font-size: 180%;
 }
 
-section.toc > h1{
+section.toc>h1{
   font-size : 140%;
   color : black;
   font-style : italic;
 }
-section h1, section.week>h1, section.week>h2 {
+section>h1, section.week>h1, section.week>h2 {
   font-size: 180%;
 }
-section section h1 {
+section>section>h1 {
   font-size: 160%;
 }
-section section section h1 {
+section>section>section>h1 {
   font-size: 140%;
 }
-section section section section h1 {
+section>section>section>section>h1 {
   font-size: 120%;
 }
 
-section.week h1 {
+section.week>h1 {
   font-size: 160%;
 }
 
-section.day h1 {
+section.day>h1 {
   font-size: 130%;
 }
 
-section.day h1.noclass {
+section.day>h1.noclass {
   font-style: italic;
   color: gray;
 }
 
-section.work section h1 {
+section.work>section>h1 {
   font-style: bold;
 }
 
-section.day h1.duedate>table {
+section.day>h1.duedate {
   border-style: solid;
   border-color: #BD0032;
 }
 section.work {
   padding-bottom: 2em;
 }
-section.todo h1 {
+section.todo>h1 {
   margin-bottom: 0pt;
 }
 
@@ -137,29 +137,26 @@ tfoot.total {
 tfoot.total td.key {
   text-align: right;
 }
-table.inner {
-}
 
 /* LISTS OF ASSIGNMENTS */
 ol, ul {
   /* Space from left margin to start of list item labels */
   padding-left: 1em;
 }
-li > p {
-  margin: 0.25em;
-}
 ol:last-child, ul:last-child {
   margin-bottom: 0.5em;
 }
-li {
-  margin-left: 0.5em;
-}
-ol ol {
+ol>ol {
   list-style-type: lower-alpha;
 }
-
-ol ol ol {
+ol>ol>ol {
   list-style-type: lower-roman;
+}
+li>p {
+  margin: 0.25em;
+}
+li {
+  margin-left: 0.5em;
 }
 
 /* EMBEDDED VIDEOS */
@@ -170,7 +167,7 @@ div.video {
   height: 0;
 }
 
-div.video iframe {
+div.video>iframe {
   position: absolute;
   top: 0;
   left: 0;
@@ -201,3 +198,4 @@ strong.alert {
 abbr {
   font-weight: bold;
 }
+

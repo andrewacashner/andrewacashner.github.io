@@ -26,14 +26,6 @@ hr.unit {
   height: 10px;
 }
 
-hr.unit:after {
-  background: LightGray;
-  content: "♮ ♯ ♭";
-  position: relative;
-  top: -1em;
-  padding: 0 6px;
-}
-
 section.main>h1 {
   font-size: 200%;
 }

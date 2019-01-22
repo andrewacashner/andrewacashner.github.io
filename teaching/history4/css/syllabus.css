@@ -85,6 +85,7 @@ section.day-duedate > h2 {
    Marked up as lists but displayed as table;
    adaptive display as block on small screens
 */
+
 section.week > h1, 
 section.day > h2,
 section.day-noclass > h2
@@ -93,45 +94,35 @@ section.day-duedate > h2 {
   width: 100%;
 }
 
-h1 > ul.head,
-h2 > ul.head {
+ul.head, ul.subhead {
   display: table-row;
 }
 
-h1 > ul.head > li.label {
+ul.head > li {
   display: table-cell;
+}
+h1 > ul.head > li.label {
   width: 5em;
 }
 
 h2 > ul.head > li.label {
-  display: table-cell;
   width: 8em;
 }
 
-h1 > ul.head > li.title,
-h2 > ul.head > li.title {
-  display: table-cell;
-}
-
-h1 > ul.head > li.title > ul.subhead,
-h2 > ul.head > li.title > ul.subhead {
-  display: table-row;
-}
-
-h1 > ul.head > li.title > ul.subhead > li.title,
-h2 > ul.head > li.title > ul.subhead > li.title {
+ul.subhead > li {
   display: table-cell;
   padding-left: 1em;
   font-style: italic;
 }
 
-
+/* Adaptive layout of headers: Shift to block display if screen is small */
 @media only screen and (max-width: 600px) {
-  h1 > ul.head > li,
-  h2 > ul.head > li {
+  ul.head > li,
+  ul.subhead > li {
     display: block;
   }
 }
+
 
 /* Paragraphs */
 p.instructions {

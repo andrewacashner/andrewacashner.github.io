@@ -21,42 +21,28 @@ html {
   background: AntiqueWhite;
 }
 
+/* Non-bold subtitles */
+h1 > ul.head > li.title > ul.subhead > li.title,
+h2 > ul.head > li.title > ul.subhead > li.title {
+  font-weight: normal;
+}
+
+ul.subhead > li.title:before {
+  content: "~ ";
+}
+
 a {
   color: DarkBlue;
 }
 
-/* AUTOMATIC LABEL WITH NUMBER FOR UNITS */
-hr.unit {
-  border: none;
-  border-top: 2px solid;
-  overflow: visible;
-  text-align: center;
-  height: 10px;
-}
-
-h1, h2 {
-  font-weight: bold;
-  color: black;
-}
-
-h2.unit {
-  font-style: italic;
-}
-
-section>h1, section.week>h1, section.week>h2 {
+section > h1,
+section.week > h1 {
   color: DarkRed;
 }
-section>section>h1 {
-  color: black;
-}
-section.work>section>h1 {
-  font-style: bold;
-}
 
-li.week-subtitle,li.subtitle {
-  font-weight: normal;
-}
-li.week-subtitle:before,li.subtitle:before {
-  content: "~ ";
+section > section > h1, 
+section > section > h2,
+section.toc > h1 {
+  color: black;
 }
 

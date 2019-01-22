@@ -5,19 +5,19 @@
  * College Music Department
  * University of Rochester
  *
- * 2019/01/03
+ * 2019/01/22
  *
  * This stylesheet is in the public domain.
  * Let me know if you find something useful or see something that could be
  * improved, see contact info at http://www.andrewcashner.com/.
  */
+
 html {
   font-size: 100%;
   max-width: 45em;
   margin: 0.5em;
 }
 
-/* AUTOMATIC LABEL WITH NUMBER FOR UNITS */
 hr.unit {
   border: none;
   border-top: 3px double;
@@ -26,88 +26,122 @@ hr.unit {
   height: 10px;
 }
 
-section.main>h1 {
+/* Headings 
+   First heading inside section is h1, then h2, etc.
+   Except: section.week first header is h1; section.day first header is h2;
+   section.todo first header is h3
+*/
+header h1 {
+  font-size: 240%;
+}
+
+header h2,
+section.main > h1 {
+  font-size: 220%;
+}
+
+section.main > h2.unit {
   font-size: 200%;
+  font-style: italic;
 }
 
-h2.unit {
+section > h1,
+section.week > h1 {
   font-size: 180%;
 }
 
-section.toc>h1{
-  font-size : 140%;
-  color : black;
-  font-style : italic;
-}
-section>h1, section.week>h1, section.week>h2 {
-  font-size: 180%;
-}
-section>section>h1 {
+section > section > h1, 
+section > h2,
+section.day > h2 {
   font-size: 160%;
 }
-section>section>section>h1 {
+
+section > section > section > h1,
+section > section > h2, 
+section > h3,
+section.todo > h3 {
   font-size: 140%;
 }
-section>section>section>section>h1 {
+
+section > section > section > section > h1 {
   font-size: 120%;
 }
 
-section.week>h1 {
-  font-size: 160%;
-}
-
-section.day>h1 {
-  font-size: 130%;
-}
-
-section.day>h1.noclass {
+section.toc > h1 {
   font-style: italic;
+}
+
+/* Special kinds of days */
+section.day-noclass {
   color: gray;
 }
 
-section.work>section>h1 {
-  font-style: bold;
-}
-
-section.day>h1.duedate {
+section.day-duedate > h2 {
   border-style: solid;
-  border-color: #BD0032;
-}
-section.work {
-  padding-bottom: 2em;
-}
-section.todo>h1 {
-  margin-bottom: 0pt;
+  border-color: red;
 }
 
-
-section.week>h1,section.day>h1,section.toc>h1 { 
+/* Week and day headings are in format LABEL: TITLE
+   Marked up as lists but displayed as table;
+   adaptive display as block on small screens
+*/
+section.week > h1, 
+section.day > h2,
+section.day-noclass > h2
+section.day-duedate > h2 {
   display: table;
   width: 100%;
 }
-h1>ul { 
+
+h1 > ul.head,
+h2 > ul.head {
   display: table-row;
 }
-h1>ul>li {
+
+h1 > ul.head > li.label {
   display: table-cell;
-}
-ul>li.week-label {
   width: 5em;
 }
-ul>li.date {
+
+h2 > ul.head > li.label {
+  display: table-cell;
   width: 8em;
 }
-ul>li.week-subtitle, ul>li.subtitle {
-  font-style: italic;
-}
-@media only screen and (max-width: 600px) {
-  h1>ul>li {
-    display: block;
+
+h1 > ul.head > li.title,
+h2 > ul.head > li.title {
+  display: table-cell;
 }
 
+h1 > ul.head > li.title > ul.subhead,
+h2 > ul.head > li.title > ul.subhead {
+  display: table-row;
+}
+
+h1 > ul.head > li.title > ul.subhead > li.title,
+h2 > ul.head > li.title > ul.subhead > li.title {
+  display: table-cell;
+  padding-left: 1em;
+  font-style: italic;
+}
+
+
+@media only screen and (max-width: 600px) {
+  h1 > ul.head > li,
+  h2 > ul.head > li {
+    display: block;
+  }
+}
+
+/* Paragraphs */
+p.instructions {
+  font-style: italic;
+}
+
+/* Tables */
 table {
-  border-collapse: collapse;
   margin-left: 1em;
+}
 td {
   vertical-align: top;
   padding-right: 1em;
@@ -121,8 +155,6 @@ td.text,th.text {
 td.date,th.date {
   width: 8.5em;
 }
-td.subtitle {
-}
 tfoot.total {
   border-top: 1px solid;
 }
@@ -130,63 +162,72 @@ tfoot.total td.key {
   text-align: right;
 }
 
-/* LISTS OF ASSIGNMENTS */
+/* Lists */
 ol, ul {
   /* Space from left margin to start of list item labels */
   padding-left: 1em;
-}
-ol:last-child, ul:last-child {
   margin-bottom: 0.5em;
 }
-ol>ol {
+
+ol > li > ol {
   list-style-type: lower-alpha;
 }
-ol>ol>ol {
+
+ol > li > ol > li > ol {
   list-style-type: lower-roman;
 }
-li>p {
-  margin: 0.25em;
+
+ol > li > ol,
+ul > li > ol {
+  /* Space before first sublist item */
+  margin-top : 0.25em;
 }
+
 li {
   margin-left: 0.5em;
 }
 
-/* EMBEDDED VIDEOS */
+ol.todo > li {
+  margin-bottom: 1em;
+}
+
+li > p {
+  margin: 0.25em;
+}
+
+/* Embedded videos */
 div.video {
+  overflow:hidden;
   position: relative;
   padding-bottom: 56.25%; /* 16:9 ratio */
   padding-top: 25px;
   height: 0;
+  margin-top: 1em;
+  margin-bottom: 1em;
 }
 
-div.video>iframe {
+div.video iframe {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
 }
-/* INLINE STYLES */
-div.aside {
-  display: block;
-  margin-left: auto;
-  margin-right: 0;
-  margin-top: 0.5em;
-  margin-bottom: 0.5em;
-  max-width: 20em;
-  text-align: right;
-  font-size: 75%;
-}
+
+/* Inline styles */
 q {
   /* Typographical quotation marks */
   quotes: "\201C" "\201D" "\2018" "\2019";
 }
+
 cite {
   font-style: italic;
 }
+
 strong.alert {
   color: red;
 }
+
 abbr {
   font-weight: bold;
 }

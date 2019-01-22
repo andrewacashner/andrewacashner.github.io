@@ -20,33 +20,6 @@ html {
   background: LightGray;
 }
 
-a {
-  color: DarkBlue;
-}
-
-/*
-a:visited {
-  color: DarkSlateBlue;
-}
-*/
-
-/* AUTOMATIC LABEL WITH NUMBER FOR UNITS */
-hr.unit {
-  border: none;
-  border-top: 3px double;
-  overflow: visible;
-  text-align: center;
-  height: 10px;
-}
-
-hr.unit:after {
-  background: LightGray;
-  content: "♮ ♯ ♭";
-  position: relative;
-  top: -1em;
-  padding: 0 6px;
-}
-
 h1, h2 {
   font-family: 'Sanchez', serif;
   font-weight: normal;
@@ -57,20 +30,44 @@ h2.unit {
   font-style: italic;
 }
 
-section h1, section.week>h1, section.week>h2 {
+section > h1,
+section.week > h1 {
   color: FireBrick;
 }
-section section h1 {
+
+section > section > h1, 
+section > section > h2,
+section.toc > h1 {
   color: black;
 }
-section.work section h1 {
+
+section.day-noclass > h2 {
+  color: gray;
+}
+
+section.todo > h3 {
   font-family: 'Open Sans', sans-serif;
   font-style: bold;
 }
 
-li.week-subtitle::before,li.subtitle::before {
+ul.subhead > li.title:before {
   content: "{";
 }
-li.week-subtitle::after,li.subtitle::after {
+
+ul.subhead > li.title:after {
   content: "}";
 }
+
+a {
+  color: DarkBlue;
+}
+
+hr.unit:after {
+  background: LightGray;
+  content: "♮ ♯ ♭";
+  position: relative;
+  top: -1em;
+  padding: 0 6px;
+}
+
+

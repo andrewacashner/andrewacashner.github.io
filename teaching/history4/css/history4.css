@@ -70,4 +70,10 @@ hr.unit:after {
   padding: 0 6px;
 }
 
+section.day-duedate > h2 {
+  background: SteelBlue;
+  border-color: SteelBlue;
+  color: Gainsboro;
+}
+
 

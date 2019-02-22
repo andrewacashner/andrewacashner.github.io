@@ -12,8 +12,8 @@
  * improved, see contact info at http://www.andrewcashner.com/.
  */
 
-@import url('syllabus.css');
 @import url('https://fonts.googleapis.com/css?family=Sanchez:400,400i|Open+Sans:400,400i,700,700i');
+@import url('syllabus.css');
 
 html {
   font-family: 'Open Sans', sans-serif;

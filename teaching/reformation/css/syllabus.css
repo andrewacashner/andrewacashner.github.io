@@ -70,6 +70,20 @@ section > section > section > section > h1 {
 section.toc > h1 {
   font-style: italic;
 }
+a.tocdate {
+  display: inline-block;
+  width: 8em;
+}
+
+a.tocdate > div.tocweekday {
+  display: inline-block;
+  width: 1.5em;
+}
+
+a.tocweek {
+  display: inline-block;
+  width: 2em;
+}
 
 /* Special kinds of days */
 section.day-noclass {

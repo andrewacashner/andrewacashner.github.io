@@ -1,0 +1,142 @@
+/* syllabus.css
+ * Stylesheet for university course syllabi  
+ * 
+ * Andrew A. Cashner
+ * College Music Department
+ * University of Rochester
+ *
+ * 2018/08/08
+ *
+ * This stylesheet is in the public domain.
+ * Let me know if you find something useful or see something that could be
+ * improved, see contact info at http://www.andrewcashner.com/.
+ */
+
+/* DEFAULTS */
+html {
+  font-family: serif;
+  font-size: 100%;
+  max-width: 45em;
+  margin: 2em;
+}
+
+/* AUTOMATIC LABEL WITH NUMBER FOR UNITS */
+hr.unit {
+  border: none;
+  border-top: 3px double;
+  overflow: visible;
+  text-align: center;
+  height: 10px;
+}
+hr.unit:after {
+  background: white;
+  content: "♮ ♯ ♭";
+  position: relative;
+  top: -0.6em;
+  padding: 0 6px;
+}
+
+/* AUTOMATIC LABEL WITH NUMBER FOR WEEKS */
+section.week h1 {
+  font-style: italic;
+  font-weight: normal;
+}
+
+/* CLASS TITLES */
+h5 {
+  /* Used for titles of class sessions */
+  font-size: 100%;
+  font-family: sans-serif;
+}
+h5.event {
+  font-style: italic;
+  color: gray;
+}
+h5.duedate>table {
+  border-style: solid;
+  border-color: red;
+}
+table {
+  border-collapse: collapse;
+  margin-left: 1em;
+}
+td {
+  vertical-align: top;
+  padding-right: 1em;
+}
+td.number {
+  text-align: right;
+}
+td.text,th.text { 
+  text-align: left;
+}
+td.date,th.date {
+  font-weight: normal;
+  width: 6em;
+}
+tfoot.total {
+  border-top: 1px solid;
+}
+tfoot.total td.key {
+  text-align: right;
+}
+table.inner {
+  font-style: italic;
+}
+
+/* LISTS OF ASSIGNMENTS */
+ol, ul {
+  /* Space for list item labels */
+  padding-left: 2em;
+}
+ol.reading, ol.music, ol.writing {
+  /* Space from left margin to start of list item labels */
+  margin-left: 3em;
+}
+p.listlabel {
+  /* Align with left edge of list item labels */
+  margin-left: 3em;
+  font-style: italic;
+}
+
+/* EMBEDDED VIDEOS */
+div.video {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 ratio */
+  padding-top: 25px;
+  height: 0;
+}
+
+div.video iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+/* INLINE STYLES */
+div.aside {
+  display: block;
+  margin-left: auto;
+  margin-right: 0;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  max-width: 15em;
+  text-align: right;
+  font-size: 75%;
+  font-color: gray;
+  font-style: italic;
+}
+q {
+  /* Typographical quotation marks */
+  quotes: "\201C" "\201D" "\2018" "\2019";
+}
+cite {
+  font-style: italic;
+}
+strong.alert {
+  color: red;
+}
+abbr {
+  font-weight: bold;
+}

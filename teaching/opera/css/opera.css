@@ -12,26 +12,25 @@
  * improved, see contact info at http://www.andrewcashner.com/.
  */
 
-/* 
-@import url('https://fonts.googleapis.com/css?family=Martel+Sans|Playfair+Display&display=swap');
-*/
+@import
+url('https://fonts.googleapis.com/css?family=Abril+Fatface|Oswald&display=swap');
 @import url('syllabus.css');
 
 html {
-  font-family: sans-serif;
-  background: LemonChiffon;
+  font-family: 'Oswald', sans-serif;
+  background: WhiteSmoke;
 }
 
 
 a {
-  color: Teal;
+  color: SlateGray;
 }
 
 
 h1, h2 {
-/*  font-family: 'Playfair Display', serif; */
-  font-weight: bold;
-  color: Crimson;
+  font-family: 'Abril Fatface'; serif;
+  font-weight: normal;
+  color: MediumBlue;
 }
 
 h2.unit {
@@ -52,8 +51,8 @@ section.toc > h1 {
 }
 
 section.day-noclass > h2 {
-  color: SlateGray;
- /* font-family: 'Martel Sans', sans-serif; */
+  color: LightSlateGray;
+  font-family: 'Oswald', sans-serif;
   font-size: 120%;
 }
 
@@ -62,28 +61,14 @@ section.todo > h3 {
   font-style: bold;
 }
 
-ul.subhead > li.title:before {
-  content: "{";
-}
-
-ul.subhead > li.title:after {
-  content: "}";
-}
-
-hr.unit:after {
-/*  background: Linen; */
-  content: "♮ ♯ ♭";
-  position: relative;
-  top: -1em;
-  padding: 0 6px;
+section.day > h2 > ul.head {
+  font-family: 'Oswald', sans-serif;
 }
 
 section.day-duedate > h2 {
-/*   background: RebeccaPurple;
-  border-color: RebeccaPurple;
-  color: Linen;
-  font-family: 'Martel Sans', sans-serif;
-  */
+  border-color: MediumBlue;
+  background: white;
+  font-family: 'Oswald', sans-serif;
   font-size: 120%;
 }
 

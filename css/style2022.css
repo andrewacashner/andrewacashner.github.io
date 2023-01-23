@@ -91,11 +91,7 @@ p + p {
   text-indent: 1.5em;
 }
 
-p.abstract {
-  font-size: 85%;
-  margin-top: 1em;
-  margin-bottom: 1em;
-}
+
 
 ul blockquote {
   font-size: 80%;
@@ -139,4 +135,33 @@ header nav a {
   text-decoration: none;
 }
 
+details {
+  user-select: none;
+}
 
+details summary {
+  font-style: italic;
+}
+
+details summary::after {
+  content: "➕" ; /* U+2795 */
+  font-style: normal;
+  padding-left: 1ex;
+}
+
+details[open] summary::after {
+  content: " ➖" ; /* U+2796 */
+}
+
+summary {
+  display: flex;
+  cursor: pointer;
+}
+
+p.abstract {
+  font-style: normal;
+  font-size: 85%;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: 1em;
+}

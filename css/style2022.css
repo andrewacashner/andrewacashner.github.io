@@ -38,6 +38,11 @@ header nav ul {
   flex-direction: row;
 }
 
+section + section {
+  padding-top: 1em;
+}
+
+
 /* Display nav menu as vertical stack on small screens */
 @media only screen and (max-width: 420px) {
     header nav ul {

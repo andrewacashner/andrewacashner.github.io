@@ -37,6 +37,10 @@ p.abstract {
   margin-left: 3em;
   margin-right: 3em;
 }
+section + section {
+  padding-bottom: 1em;
+  border: 1px solid red;
+}
 
 /* Header with site title, page title, and nav menu */
 header {

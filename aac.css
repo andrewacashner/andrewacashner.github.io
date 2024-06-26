@@ -18,6 +18,15 @@
   font-weight: bold;
   font-style: italic;
 }
+@font-face {
+  font-family: "FiraMono";
+  src: url("fonts/FiraMono-Regular.otf");
+}
+@font-face {
+  font-family: "FiraMono";
+  src: url("fonts/FiraMono-Bold.otf");
+  font-weight: bold;
+}
 
 html {
   height: 100%;
@@ -176,7 +185,7 @@ section.card a.highlight {
 }
 
 section.card code {
-  font-family: "Fira Mono", monospace;
+  font-family: "FiraMono", monospace;
   font-size: 82%;
 }
 

@@ -1,72 +1,71 @@
-@font-face {
-  font-family: "VenturisSans";
-  src: url("fonts/VenturisSansADF-Regular.otf");
-}
-@font-face {
-  font-family: "VenturisSans";
-  src: url("fonts/VenturisSansADF-Italic.otf");
-  font-style: italic;
-}
-@font-face {
-  font-family: "VenturisSans";
-  src: url("fonts/VenturisSansADF-Bold.otf");
-  font-weight: bold;
-}
-@font-face {
-  font-family: "VenturisSans";
-  src: url("fonts/VenturisSansADF-BoldItalic.otf");
-  font-weight: bold;
-  font-style: italic;
-}
-@font-face {
-  font-family: "FiraMono";
-  src: url("fonts/FiraMono-Regular.otf");
-}
-@font-face {
-  font-family: "FiraMono";
-  src: url("fonts/FiraMono-Bold.otf");
-  font-weight: bold;
+:root {
+  --color1: 
+  #C0D6DF;
+  --color2: 
+  #4A6FA5;
+  --color3: 
+  #166088;
+  --color4: 
+  #4F6D7A;
+  --color5: 
+  #DBE9EE;
 }
 
-html {
-  height: 100%;
+@font-face {
+  font-family: "Linux Biolinum O";
+  font-style: normal;
+  font-weight: normal;
+  src: url("fonts/LinBiolinum_R.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Linux Biolinum O";
+  font-style: italic;
+  font-weight: normal;
+  src: url("fonts/LinBiolinum_RI.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Linux Biolinum O";
+  font-weight: bold;
+  font-style: normal;
+  src: url("fonts/LinBiolinum_RB.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Fira Mono";
+  src: url("fonts/FiraMono-Regular.otf") format("opentype");
 }
 
 body {
-  height: 100%;
   margin: 0;
-  font-family: "VenturisSans", sans-serif;
-  font-size: 105%;
-  background-color: FloralWhite;
+  background-color: var(--color1);
+  font-family: 'Linux Biolinum O', sans-serif;
+}
+
+section.stream p {
+  font-size: 120%;
 }
 
 header {
-  margin-top: 0;
-  margin-bottom: 1em;
-  margin-left: 0;
-  margin-right: 0;
-  padding-top: 1ex;
   text-align: center;
+  background-color: var(--color1);
+  height: 10em;
+  padding-top: 1ex;
+}
+
+main {
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+footer {
+  text-align: center;
+  height: 5em;
 }
 
 header h1 {
   font-size: 250%;
-}
-
-header.software {
-  background-color: LightCoral;
-}
-
-header.music {
-  background-color: CornflowerBlue;
-}
-
-header.writing {
-  background-color: LightSeaGreen;
-}
-
-header.villancicos {
-  background-color: Thistle;
 }
 
 header h1 a {
@@ -77,41 +76,43 @@ header h1 a {
 header h2 {
   font-size: 175%;
   font-style: italic;
-  padding-bottom: 1em;
 }
 
-main {
-  margin-left: 1em;
-  margin-right: 1em;
-}
-
+/*
 main p {
   max-width: 40em;
 }
+*/
 
 div.streams {
   margin-left: -1em;
   margin-right: -1em;
   display: flex;
   flex-direction: column;
+  height: 100%;
 }
 
 section.stream {
-  min-height: 30%;
+  height: 33%;
   padding: 1em;
 }
 
-section.stream.software {
-  background-color: LightCoral;
+section.stream h1, .software h1 a, .music h1 a, .writing h1 a, .villancicos h1 a {
+  color: var(--color5);
 }
 
-section.stream.music {
-  background-color: CornflowerBlue;
+.software {
+  background-color: var(--color2);
 }
 
-section.stream.writing {
-  background-color: LightSeaGreen;
+.music, .villancicos {
+  background-color: var(--color3);
 }
+
+.writing {
+  background-color: var(--color4);
+}
+
 
 section.stream h1 {
   font-size: 200%;
@@ -143,49 +144,55 @@ a.panel {
   color: inherit;
 }
 
-footer {
-  text-align: center;
-}
+
 
 footer p {
   font-size: 80%;
 }
 
+section.text { 
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 40em;
+}
+
 div.card-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, 22em);
+  display: flex;
+  flex-direction: row;
+  overflow: scroll;
 }
 
 section.card {
-  width: 19em;
-  height: 30em;
+  min-width: 16em;
+  max-height: 28em;
   border: 1px solid black;
   padding: 1em;
   margin: 1ex;
   overflow: scroll;
-  background: DimGray;
+  background: linear-gradient(var(--color2), var(--color3));
   color: white;
-  border-radius: 1ex;
-  display: grid;
-  grid-template-rows: 2em 5em auto 10em 2em;
+  display: flex;
+  flex-direction: column;
 }
 
-section.card h1, h2, img, ul, a.highlight {
-  display: block;
+section.card h2 {
+  color: var(--color1);
 }
 
 section.card a {
-  color: PaleTurquoise;
+  color: PaleTurquoise; /* TODO */
 }
 
 section.card a.highlight {
-  color: Turquoise;
+  color: PaleTurquoise;
   font-size: 120%;
   font-weight: bold;
+  margin-top: 1ex;
+  height: 1em;
 }
 
 section.card code {
-  font-family: "FiraMono", monospace;
+  font-family: "Fira Mono", monospace;
   font-size: 82%;
 }
 
@@ -216,6 +223,7 @@ section h1 {
 section h2 {
   font-size: 130%;
 }
+
 
 td + td {
   padding-left: 1em;
@@ -249,4 +257,10 @@ iframe {
   margin-right: auto;
   width: 25em;
   height: 15em;
+}
+
+video {
+  width: 16em;
+  margin-left: auto;
+  margin-right: auto;
 }
